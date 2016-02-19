@@ -1,6 +1,8 @@
-class TestController < ApplicationController
+class ImagesController < ApplicationController
 
-  def show
+  def new
+    # form
+
     response = HTTParty.get('https://api.mapbox.com/uploads/v1/natasha-t/credentials?access_token=sk.eyJ1IjoibmF0YXNoYS10IiwiYSI6ImNpa3Q0YmhuYjAwMjl1YW0zMGJhcDAya2MifQ.C4u_Lx4TzEuA6HIkbTJFwg')
     p response.parsed_response
 
@@ -16,5 +18,12 @@ class TestController < ApplicationController
     s3_bucket = Aws::S3::Resource.new.bucket(bucket)
 
   end
+
+
+  private
+
+    def set_s3_direct_post
+      @s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
+    end
 
 end
