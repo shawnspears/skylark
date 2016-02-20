@@ -3323,3 +3323,49 @@ Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 19:27:59 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 19:31:16 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (73.2ms)
+Completed 200 OK in 2060ms (Views: 565.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/images.self-f1e930f8ead08db4740fdd9746f21a45c884801e459a56edc4838cf33bf241e4.css?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
