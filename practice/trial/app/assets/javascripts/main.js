@@ -1,4 +1,9 @@
 $(document).ready(function(){
-  console.log($().fileupload)
-  // debugger
-})
+
+  $('.directUpload').find("input:file").each(function(i, elem) {
+    var fileInput = $(elem);
+    console.log(fileInput);
+  });
+
+
+});
