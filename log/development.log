@@ -3369,3 +3369,1695 @@ Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 19:31:19 -0800
+
+
+Started GET "/" for ::1 at 2016-02-19 21:58:12 -0800
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/fatmaocal/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/fatmaocal/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/fatmaocal/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.6ms)
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateImages (20160219215442)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tileset_name" varchar, "image_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160219215442"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-02-19 21:58:35 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1859ms (Views: 697.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 21:58:37 -0800
+
+
+Started GET "/image/new" for ::1 at 2016-02-19 21:58:51 -0800
+
+ActionController::RoutingError (No route matches [GET] "/image/new"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/fatmaocal/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/fatmaocal/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/fatmaocal/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.8ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 21:58:55 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 1354ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 21:58:56 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 21:59:44 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 967ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 21:59:45 -0800
+
+
+Started GET "/" for ::1 at 2016-02-19 22:32:02 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1594ms (Views: 246.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-19 22:32:04 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 504ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 22:32:15 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 766ms (Views: 78.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 22:35:08 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 3191ms (Views: 262.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 22:35:11 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 781ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 22:35:12 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 22:40:02 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1332ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 22:40:03 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 22:56:41 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 1141ms (Views: 282.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 23:04:46 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 688ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 23:12:45 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 898ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 23:12:46 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 23:16:31 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1293ms (Views: 38.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-19 23:16:32 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-19 23:19:17 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 1736ms (Views: 309.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 00:03:09 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 923ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 00:03:10 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 00:04:50 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1170ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/main.self-70c5585b5995c125479d205311f0ff8c46454f2b998ab162f106ce13d8776c21.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 00:04:51 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-20 00:09:54 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1042ms (Views: 208.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for 127.0.0.1 at 2016-02-20 00:09:56 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-20 00:10:48 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1209ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for 127.0.0.1 at 2016-02-20 00:10:49 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 00:10:49 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 00:10:49 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for 127.0.0.1 at 2016-02-20 00:10:49 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:49 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:49 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:50 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:50 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:50 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:50 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:50 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:50 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for 127.0.0.1 at 2016-02-20 00:10:50 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-20 00:11:00 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 659ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for 127.0.0.1 at 2016-02-20 00:11:01 -0800
+
+
+Started GET "/" for ::1 at 2016-02-20 00:11:59 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1140ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 00:12:00 -0800
+
+
+Started GET "/" for ::1 at 2016-02-20 00:12:01 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 539ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 00:12:02 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 00:12:05 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 902ms (Views: 35.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 00:12:06 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 00:12:49 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1244ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 00:12:51 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 00:17:25 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1493ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 00:17:26 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:51:27 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 1017ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `object' for nil:NilClass):
+  app/controllers/images_controller.rb:43:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (174.1ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:51:48 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 499ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `fields' for nil:NilClass):
+    1: <h2> Image Form </h2>
+    2: 
+    3: <%= form_for(@image, html: { class: 'directUpload', data: { 'form-data' => (@s3_direct_post.fields), 'url' => @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.url).host } }) do |f| %>
+    4: 
+    5:   <div class="field">
+    6:     <%= f.label :image_url %><br>
+  app/views/images/new.html.erb:3:in `_app_views_images_new_html_erb___2817988458678266684_70288857199640'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 01:52:08 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1500ms (Views: 688.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:52:18 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `fields' for nil:NilClass):
+    1: <h2> Image Form </h2>
+    2: 
+    3: <%= form_for(@image, html: { class: 'directUpload', data: { 'form-data' => (@s3_direct_post.fields), 'url' => @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.url).host } }) do |f| %>
+    4: 
+    5:   <div class="field">
+    6:     <%= f.label :image_url %><br>
+  app/views/images/new.html.erb:3:in `_app_views_images_new_html_erb___2817988458678266684_70288857199640'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.5ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 01:54:28 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1666ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 01:54:30 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 436ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:54:35 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:3: syntax error, unexpected ')', expecting '}'
+... html: { class: 'directUpload'), 'url' => @s3_direct_post.ur...
+...                               ^
+/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:3: syntax error, unexpected =>, expecting keyword_end
+...lass: 'directUpload'), 'url' => @s3_direct_post.url, 'host' ...
+...                               ^
+/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:3: syntax error, unexpected =>, expecting :: or '[' or '.'
+... @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.ur...
+...                               ^
+/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:3: syntax error, unexpected '}', expecting keyword_end
+...rse(@s3_direct_post.url).host }) do |f| @output_buffer.safe_...
+...                               ^
+/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/images/new.html.erb:3: syntax error, unexpected ')', expecting '}'
+  app/views/images/new.html.erb:3: syntax error, unexpected =>, expecting keyword_end
+  app/views/images/new.html.erb:3: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/images/new.html.erb:3: syntax error, unexpected '}', expecting keyword_end
+  app/views/images/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.5ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:54:49 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:3: syntax error, unexpected ')', expecting '}'
+... html: { class: 'directUpload'), 'url' => @s3_direct_post.ur...
+...                               ^
+/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:3: syntax error, unexpected =>, expecting keyword_end
+...lass: 'directUpload'), 'url' => @s3_direct_post.url, 'host' ...
+...                               ^
+/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:3: syntax error, unexpected =>, expecting :: or '[' or '.'
+... @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.ur...
+...                               ^
+/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:3: syntax error, unexpected '}', expecting keyword_end
+...rse(@s3_direct_post.url).host }) do |f| @output_buffer.safe_...
+...                               ^
+/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/views/images/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/images/new.html.erb:3: syntax error, unexpected ')', expecting '}'
+  app/views/images/new.html.erb:3: syntax error, unexpected =>, expecting keyword_end
+  app/views/images/new.html.erb:3: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/images/new.html.erb:3: syntax error, unexpected '}', expecting keyword_end
+  app/views/images/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (155.6ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:55:41 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 510ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    1: <h2> Image Form </h2>
+    2: 
+    3: <%= form_for(@image, html: { class: 'directUpload', data: { 'url' => @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.url).host } }) do |f| %>
+    4: 
+    5:   <div class="field">
+    6:     <%= f.label :image_url %><br>
+  app/views/images/new.html.erb:3:in `_app_views_images_new_html_erb___2817988458678266684_70288878106860'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.1ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:55:57 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    1: <h2> Image Form </h2>
+    2: 
+    3: <%= form_for(@image, html: { class: 'directUpload', data:  {'host' => URI.parse(@s3_direct_post.url).host } }) do |f| %>
+    4: 
+    5:   <div class="field">
+    6:     <%= f.label :image_url %><br>
+  app/views/images/new.html.erb:3:in `_app_views_images_new_html_erb___2817988458678266684_70288858124640'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.2ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:56:20 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 117ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 01:56:20 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:56:52 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1141ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 01:56:53 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:58:16 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 496ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upload_file' for nil:NilClass):
+  app/controllers/images_controller.rb:47:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.1ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:58:35 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 500ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `presigned_post' for nil:NilClass):
+  app/controllers/images_controller.rb:49:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.7ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:58:54 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `presigned_post' for nil:NilClass):
+  app/controllers/images_controller.rb:45:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.6ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:58:56 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `presigned_post' for nil:NilClass):
+  app/controllers/images_controller.rb:45:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.5ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 01:59:43 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `presigned_post' for nil:NilClass):
+  app/controllers/images_controller.rb:47:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.5ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 02:02:23 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1055ms (Views: 23.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 02:02:24 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 02:03:47 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 1303ms (Views: 426.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 02:05:11 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 469ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `presigned_post' for nil:NilClass):
+  app/controllers/images_controller.rb:47:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.7ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 02:06:09 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 501ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `object' for nil:NilClass):
+  app/controllers/images_controller.rb:43:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.9ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 02:13:42 -0800
+
+SyntaxError (/Users/fatmaocal/Desktop/dev_bootcamp/phase-3/Shawn/skylark/app/controllers/images_controller.rb:48: dynamic constant assignment
+      S3_BUCKET = Aws::S3::Resource.new.bucket(ENV['S3_BUCKET'])
+                 ^):
+  app/controllers/images_controller.rb:48: dynamic constant assignment
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 11:19:32 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1490ms (Views: 260.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 11:19:34 -0800
+Processing by TestController#show as HTML
+  Rendered test/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 622ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:19:42 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 1917ms (ActiveRecord: 0.0ms)
+
+Aws::S3::Errors::InvalidAccessKeyId (The AWS Access Key Id you provided does not exist in our records.):
+  app/controllers/images_controller.rb:50:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.6ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:21:21 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 781ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `fields' for nil:NilClass):
+    1: <h2> Image Form </h2>
+    2: 
+    3: <%= form_for(@image, html: { class: 'directUpload', data: { 'form-data' => (@s3_direct_post.fields), 'url' => @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.url).host } }) do |f| %>
+    4: 
+    5:   <div class="field">
+    6:     <%= f.label :image_url %><br>
+  app/views/images/new.html.erb:3:in `_app_views_images_new_html_erb___1577534311211259062_70197458964920'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.2ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:22:02 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 1040ms (ActiveRecord: 0.0ms)
+
+Aws::S3::Errors::InvalidAccessKeyId (The AWS Access Key Id you provided does not exist in our records.):
+  app/controllers/images_controller.rb:51:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.0ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:23:55 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 1454ms (ActiveRecord: 0.0ms)
+
+Aws::S3::Errors::AuthorizationHeaderMalformed (The authorization header is malformed; the Credential is mal-formed; expecting "<YOUR-AKID>/YYYYMMDD/REGION/SERVICE/aws4_request".):
+  app/controllers/images_controller.rb:54:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.4ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:30:57 -0800
+
+ActionController::RoutingError (undefined local variable or method `access_key' for main:Object):
+  app/controllers/images_controller.rb:106:in `<top (required)>'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.8ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:31:33 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 1055ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upload_file' for #<Aws::S3::Bucket name="tilestream-tilesets-production">):
+  app/controllers/images_controller.rb:61:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.3ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:31:47 -0800
+Processing by ImagesController#new as HTML
+  Rendered images/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 930ms (Views: 31.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/images.self-8af44b7e27a9562a979771758d390e491e782341d1dd81ad915baa1914796252.css?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/application.self-e4fd6dbbcc3c32e8f0b5c7b20ece5f1495362083db54b91f0157ffac40c407a9.css?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/test.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/jquery.ui.widget.self-b36f57dc8fcd91e2e7d44d0c5969e797a55d79f19073ecbd3f5093778e5ad482.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/z.jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/images.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/main.self-7082b6d1049269827c92bd4027c9c8184d370619dbf3ac933c575ab544ba69da.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-02-20 11:31:48 -0800
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:32:22 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 752ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upload_file' for #<Aws::S3::Bucket name="tilestream-tilesets-production">):
+  app/controllers/images_controller.rb:61:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.3ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:32:41 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 47454ms (ActiveRecord: 0.0ms)
+
+OpenSSL::SSL::SSLError (SSL_connect SYSCALL returned=5 errno=0 state=SSLv3 read server session ticket A):
+  app/controllers/images_controller.rb:31:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.8ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.5ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:33:29 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 893ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upload_file' for #<Aws::S3::PresignedPost:0x007fb03bd702b0>):
+  app/controllers/images_controller.rb:64:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.2ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.4ms)
+
+
+Started GET "/images/new" for ::1 at 2016-02-20 11:34:02 -0800
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 1167ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upload_file' for #<Aws::S3::Bucket name="tilestream-tilesets-production">):
+  app/controllers/images_controller.rb:64:in `set_s3_direct_post'
+
+
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.9ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.7ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/fatmaocal/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.3ms)
